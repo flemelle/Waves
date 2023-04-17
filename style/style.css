@@ -1,0 +1,81 @@
+html
+{
+    height : 100%;
+    width : 100%;
+    margin : 0;
+    padding : 0;
+    font-family: 'mypolice';
+    transition : 0.6s;
+    transition-timing-function: ease;
+}
+body
+{
+    height : 100%;
+    width : 100%;
+    position : absolute;
+    margin : 0;
+    padding : 0;
+
+    display : flex;
+    overflow: hidden;
+}
+canvas
+{
+    background-color: rgb(25, 165, 175);
+    margin : 0;
+    padding : 0;
+}
+@font-face {
+    font-family: 'mypolice';
+    src: url('font/Mina/Mina-Regular.ttf');
+}
+#intro
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    height : 100%;
+    width : 100%;
+    z-index : 10000;
+    position : absolute;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#intro.hide
+{
+    display : none;
+    opacity : 0;
+    animation : fade 3s ease;
+    transition : 0.4s;
+}
+@keyframes fade 
+{
+    0%{
+        opacity : 50%;
+    }
+    15%{
+        opacity : 100%;
+    }
+    85%{
+        opacity : 100%;
+    }
+    100%{
+        opacity : 0%;
+    }
+}
+#message
+{
+    background-color: #fff;
+    height : 50%;
+    width : 50%;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding : 80px;
+    border : 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 200%;
+
+}
